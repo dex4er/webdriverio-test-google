@@ -21,6 +21,7 @@ describe("Google search Images", function() {
 
   it("click Grafika", function() {
       return browser
+        .pause(1000)
         .waitThenClick('a[href*="tbm=isch"]');
   });
 
