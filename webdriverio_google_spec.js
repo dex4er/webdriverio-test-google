@@ -4,22 +4,17 @@ describe("Google search Images", function() {
 
   it("Google first page", function() {
     return browser
-      .url('http://www.google.pl/')
+      .url('http://www.google.com/?hl=en-US')
       .waitForVisible('input[name="q"]');
   });
 
   it("input query", function() {
       return browser
-        .keys('webdriverio')
-        .keys('Enter');
+        .setValue('input[name="q"]', 'webdriverio')
+        .keys('Enter')
   });
 
-  it("click Zamiast tego wyszukaj", function() {
-    return browser
-      .waitThenClick('a.spell_orig');
-  });
-
-  it("click Grafika", function() {
+  it("click Images", function() {
       return browser
         .pause(1000)
         .waitThenClick('a[href*="tbm=isch"]');
@@ -30,9 +25,9 @@ describe("Google search Images", function() {
       .waitThenClick('.rg_di:first-child a.rg_l');
   });
 
-  it("click Odwiedź stronę", function() {
+  it("click Visit page", function() {
     return browser
-      .waitThenClick('=Odwiedź stronę');
+      .waitThenClick('=Visit page');
   });
 
   it("webdriver.io page", function() {
