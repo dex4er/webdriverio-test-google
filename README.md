@@ -37,3 +37,7 @@ selenium-standalone start
 ```
 wdio
 ```
+
+## Documentation
+
+See http://webdriver.io/api.html
