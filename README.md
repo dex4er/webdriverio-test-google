@@ -4,7 +4,7 @@ This is simple demonstration how to click through webpage using webdriver.io
 
 ## Install
 
-node (http://nodejs.org), Chrome (http://www.google.com/chrome/) or Firefox (http://www.firefox.com/)
+node (http://nodejs.org), Java (http://www.java.com), Chrome (http://www.google.com/chrome/) or Firefox (http://www.firefox.com/)
 
 ## Environment
 
